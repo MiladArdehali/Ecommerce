@@ -1,0 +1,14 @@
+{{ dump(produits) }}
+
+{% for item in produits %}
+    <section>
+        <ul>
+            <li>{{ item.nom }}</li>
+            <li>{{ item.categorie }}</li>
+            <li>{{ item.description }}</li>
+            <li>{{ item.prix }}</li>
+            <li>{{ item.image }}</li>
+            <li>{{ item.tva }}</li>
+        </ul>
+    </section>
+{% endfor %}
